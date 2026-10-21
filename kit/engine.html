@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Motor de dicas R3</title>
+<style>
+/* Story 1080x1920. Zonas livres do Instagram: 250px no topo e 250px embaixo (todo texto fica entre y=250 e y=1670).
+   Tela do Windows simulada em coordenadas lógicas 640x569, ampliada 1.6875x para caber nos 1080px de largura.
+   Abaixo da tela vem a legenda do passo e, no fim, um rodapé escuro com o nome da R3. */
+@font-face { font-family: 'Inter'; font-weight: 400; src: url(fonts/Inter-Regular.otf); }
+@font-face { font-family: 'Inter'; font-weight: 600; src: url(fonts/Inter-SemiBold.otf); }
+@font-face { font-family: 'Inter'; font-weight: 700; src: url(fonts/Inter-Bold.otf); }
+@font-face { font-family: 'Montserrat'; font-weight: 600; src: url(fonts/montserrat-latin-600-normal.woff2) format('woff2'); }
+@font-face { font-family: 'Montserrat'; font-weight: 700; src: url(fonts/montserrat-latin-700-normal.woff2) format('woff2'); }
+:root { --display: 'Montserrat', 'Segoe UI', sans-serif; --body: 'Inter', 'Segoe UI', sans-serif; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #fff; }
+#stage { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #fff; color: #25211E; font-family: var(--body); }
+.stripe { position: absolute; left: 0; top: 0; width: 24px; height: 1580px; background: #005A8C; }
+
+.camera { position: absolute; left: 0; top: 260px; width: 1080px; height: 960px; overflow: hidden; background: #A9CBE9; }
+.screen { position: absolute; left: 0; top: 0; width: 640px; height: 569px; transform: scale(1.6875); transform-origin: 0 0; overflow: hidden; background: linear-gradient(135deg, #DCEBF7 0%, #A9CBE9 55%, #7FA9D1 100%); }
+.wp1 { position: absolute; width: 380px; height: 380px; border-radius: 50%; background: rgba(255,255,255,.35); left: -100px; top: -150px; }
+.wp2 { position: absolute; width: 440px; height: 440px; border-radius: 50%; background: rgba(0,90,140,.16); right: -140px; bottom: -220px; }
+
+/* área de trabalho */
+.dicon { position: absolute; left: 20px; width: 74px; text-align: center; }
+.dicon .f { position: relative; width: 46px; height: 36px; margin: 0 auto 6px; background: #7CAFDD; border-radius: 5px; }
+.dicon .f::before { content: ""; position: absolute; left: 0; top: -6px; width: 20px; height: 8px; border-radius: 4px 4px 0 0; background: #7CAFDD; }
+.dicon .l { display: block; font-size: 12.5px; font-weight: 600; color: #25211E; text-shadow: 0 0 5px rgba(255,255,255,.95); }
+.dicon .ok { position: absolute; right: -6px; top: -12px; width: 20px; height: 20px; border-radius: 50%; background: #2E7D32; opacity: 0; display: flex; align-items: center; justify-content: center; box-shadow: 0 1px 3px rgba(0,0,0,.3); }
+.dicon .ok svg { width: 12px; height: 12px; }
+
+.toast { position: absolute; left: 390px; top: 440px; width: 236px; height: 80px; background: rgba(250,250,251,.98); border: 1.5px solid #B26A00; border-radius: 10px; opacity: 0; z-index: 6; }
+.toast .ic { position: absolute; left: 12px; top: 14px; width: 28px; height: 28px; border-radius: 50%; background: #B26A00; color: #fff; font-weight: 700; font-size: 18px; display: flex; align-items: center; justify-content: center; }
+.toast .t { position: absolute; left: 52px; top: 12px; font-size: 14.5px; font-weight: 700; }
+.toast .b { position: absolute; left: 52px; top: 33px; width: 176px; font-size: 12.5px; line-height: 1.3; color: #595959; }
+
+.taskbar { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; background: rgba(243,244,245,.95); border-top: 1px solid rgba(0,0,0,.08); z-index: 5; }
+.tb-start { position: absolute; left: 262px; top: 9px; width: 18px; height: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.tb-start i { background: #005A8C; border-radius: 1px; display: block; }
+.tb-search { position: absolute; left: 292px; top: 7px; width: 108px; height: 22px; border-radius: 11px; background: #fff; border: 1px solid #D9DBDD; font-size: 10.5px; color: #7a7f84; padding: 3px 10px; }
+.tb-ico { position: absolute; top: 9px; width: 18px; height: 18px; border-radius: 5px; }
+.tb-clock { position: absolute; right: 10px; top: 4px; font-size: 10px; line-height: 1.2; text-align: right; color: #25211E; }
+
+/* teclas */
+.dim { position: absolute; left: 0; top: 0; width: 640px; height: 569px; background: rgba(37,33,30,.3); opacity: 0; z-index: 8; }
+.keys { position: absolute; left: 0; top: 200px; width: 640px; display: flex; justify-content: center; align-items: center; gap: 18px; opacity: 0; z-index: 9; }
+.key { min-width: 94px; height: 94px; padding: 0 22px; border-radius: 16px; background: #fff; border: 2px solid #D9DBDD; box-shadow: 0 6px 0 #C9CDD1, 0 14px 30px rgba(0,0,0,.28); display: flex; align-items: center; justify-content: center; font-family: var(--display); font-weight: 700; font-size: 50px; color: #25211E; }
+.key.press { transform: translateY(5px); box-shadow: 0 1px 0 #C9CDD1, 0 6px 14px rgba(0,0,0,.28); background: #005A8C; border-color: #005A8C; color: #fff; }
+.wl { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; width: 40px; height: 40px; }
+.wl i { background: #005A8C; display: block; }
+.key.press .wl i { background: #fff; }
+.plus { font-family: var(--display); font-weight: 700; font-size: 42px; color: #fff; }
+
+/* janela de Configurações; dentro dela as coordenadas são as da tela (.abs desloca a origem) */
+.win { position: absolute; left: 20px; top: 12px; width: 600px; height: 500px; background: #F7F8F9; border-radius: 10px; box-shadow: 0 14px 44px rgba(0,0,0,.32); overflow: hidden; opacity: 0; visibility: hidden; z-index: 3; }
+.abs { position: absolute; left: -20px; top: -12px; width: 640px; height: 569px; }
+.titlebar { position: absolute; left: 20px; top: 12px; width: 600px; height: 28px; background: #EEF0F2; display: flex; align-items: center; gap: 8px; padding: 0 12px; font-size: 12px; }
+.titlebar svg { width: 13px; height: 13px; }
+.tb-btns { margin-left: auto; display: flex; gap: 18px; align-items: center; color: #595959; font-size: 14px; }
+.tb-btns .bx { width: 9px; height: 9px; border: 1.3px solid #595959; display: block; }
+.nav { position: absolute; left: 20px; top: 40px; width: 190px; height: 472px; background: #EEF0F2; }
+.avatar { position: absolute; left: 32px; top: 48px; width: 32px; height: 32px; border-radius: 50%; background: #7CAFDD; }
+.uname { position: absolute; left: 74px; top: 48px; font-size: 13.5px; font-weight: 600; }
+.usub { position: absolute; left: 74px; top: 65px; font-size: 11px; color: #595959; }
+.ni { position: absolute; left: 28px; width: 174px; height: 32px; display: flex; align-items: center; padding: 0 12px; font-size: 13px; border-radius: 6px; color: #25211E; }
+.ni.active { background: #fff; font-weight: 600; }
+.ni.active::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 3px; border-radius: 2px; background: #005A8C; }
+.page { position: absolute; left: 0; top: 0; width: 640px; height: 569px; opacity: 0; }
+.pt { position: absolute; left: 230px; top: 48px; margin: 0; font-size: 23px; font-weight: 600; }
+.ps { position: absolute; left: 230px; top: 82px; font-size: 12px; color: #595959; }
+.row { position: absolute; left: 230px; width: 370px; background: #fff; border: 1px solid #E3E5E7; border-radius: 8px; }
+.row .ic { position: absolute; left: 12px; top: 13px; width: 20px; height: 20px; border-radius: 5px; }
+.row .t { position: absolute; left: 46px; top: 7px; font-size: 15px; font-weight: 600; white-space: nowrap; }
+.row .t.c { top: 13px; }
+.row .s { position: absolute; left: 46px; top: 27px; font-size: 11.5px; color: #595959; white-space: nowrap; }
+.row .z { position: absolute; right: 14px; top: 14px; font-size: 13.5px; color: #595959; font-variant-numeric: tabular-nums; }
+.row .chev { position: absolute; right: 14px; top: 12px; font-size: 18px; color: #7a7f84; }
+.card { position: absolute; left: 230px; top: 92px; width: 370px; height: 92px; background: #fff; border: 1px solid #E3E5E7; border-radius: 8px; }
+.card .t { position: absolute; left: 14px; top: 10px; font-size: 15px; font-weight: 600; }
+.card .tag { position: absolute; right: 12px; top: 10px; padding: 2px 8px; border-radius: 4px; background: #FBEBD2; color: #7A4700; font-size: 11px; font-weight: 700; }
+.card .bar { position: absolute; left: 14px; top: 44px; width: 342px; height: 10px; border-radius: 5px; background: #E3E5E7; overflow: hidden; }
+.card .bar div { width: 90%; height: 100%; background: #B26A00; border-radius: 5px; }
+.card .s { position: absolute; left: 14px; top: 62px; font-size: 13px; color: #595959; font-variant-numeric: tabular-nums; }
+
+.btnrm { position: absolute; left: 230px; top: 104px; width: 150px; height: 30px; border-radius: 6px; background: #005A8C; color: #fff; font-size: 13.5px; font-weight: 600; display: flex; align-items: center; justify-content: center; }
+.btnrm.off { background: #D9DBDD; color: #7a7f84; }
+.tot { position: absolute; left: 394px; top: 104px; height: 30px; line-height: 30px; font-size: 13px; color: #595959; white-space: nowrap; }
+.done { position: absolute; left: 394px; top: 104px; height: 30px; display: flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 700; color: #2E7D32; white-space: nowrap; opacity: 0; }
+.done svg { width: 18px; height: 18px; }
+.prog { position: absolute; left: 230px; top: 140px; width: 370px; height: 6px; border-radius: 3px; background: #E3E5E7; opacity: 0; }
+.prog div { height: 100%; width: 0; background: #005A8C; border-radius: 3px; }
+.cb { position: absolute; left: 12px; top: 13px; width: 18px; height: 18px; border: 2px solid #595959; border-radius: 4px; background: #fff; }
+.cb.on { background: #005A8C; border-color: #005A8C; }
+.cb.on::after { content: ""; position: absolute; left: 4.5px; top: 0.5px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.row.dim2 { opacity: .55; }
+.nao { position: absolute; right: 74px; top: 11px; height: 22px; line-height: 22px; padding: 0 9px; border-radius: 4px; background: #B26A00; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .04em; opacity: 0; }
+
+.ring { position: absolute; border: 2.5px solid #005A8C; box-shadow: 0 0 0 3px rgba(0,90,140,.22); border-radius: 9px; opacity: 0; z-index: 4; pointer-events: none; }
+.ring.amber { border-color: #B26A00; box-shadow: 0 0 0 3px rgba(178,106,0,.25); }
+.ripple { position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%; border: 2.5px solid #005A8C; background: rgba(0,90,140,.15); opacity: 0; z-index: 7; pointer-events: none; }
+.cursor { position: absolute; left: 0; top: 0; width: 15px; height: 21px; z-index: 7; filter: drop-shadow(0 2px 3px rgba(0,0,0,.35)); opacity: 0; }
+.chip { position: absolute; left: 10px; top: 541px; height: 22px; line-height: 22px; padding: 0 10px; background: #25211E; color: #fff; font-size: 12px; font-weight: 600; border-radius: 4px; opacity: 0; z-index: 7; white-space: nowrap; }
+
+/* legenda */
+.badge { position: absolute; left: 48px; top: 1262px; padding: 12px 22px; border-radius: 10px; background: #005A8C; color: #fff; font-family: var(--display); font-weight: 700; font-size: 26px; letter-spacing: .14em; }
+.dots { position: absolute; right: 48px; top: 1282px; display: flex; gap: 10px; }
+.dots i { width: 44px; height: 10px; border-radius: 5px; background: #D9DBDD; display: block; }
+.dots i.on { background: #005A8C; }
+.cap { position: absolute; left: 48px; top: 1352px; width: 984px; }
+.cap h4 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 54px; line-height: 1.15; color: #25211E; white-space: nowrap; }
+.cap p { margin: 16px 0 0; font-size: 38px; line-height: 1.3; color: #595959; white-space: nowrap; }
+.foot { position: absolute; left: 0; top: 1580px; width: 1080px; height: 340px; background: #25211E; }
+.foot .f1 { position: absolute; left: 48px; top: 26px; font-family: var(--display); font-weight: 700; font-size: 24px; letter-spacing: .24em; color: #7CAFDD; }
+.foot .f2 { position: absolute; right: 48px; top: 26px; font-size: 26px; color: #D9DBDD; }
+
+/* encerramento */
+.outro { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; background: #25211E; z-index: 20; opacity: 0; visibility: hidden; }
+.o-stripe { position: absolute; left: 0; top: 0; bottom: 0; width: 24px; background: #5B9BD5; }
+.gA, .gB { position: absolute; left: 80px; top: 740px; width: 960px; }
+.o-eye { margin: 0 0 30px; font-family: var(--display); font-weight: 700; font-size: 28px; letter-spacing: .26em; color: #7CAFDD; }
+.o-t1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 66px; line-height: 1.2; color: #fff; white-space: nowrap; }
+.o-t2 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 104px; line-height: 1.1; color: #fff; white-space: nowrap; }
+.o-s2 { margin: 24px 0 0; font-size: 56px; color: #D9DBDD; white-space: nowrap; }
+.o-site { position: absolute; left: 0; width: 1080px; top: 1590px; text-align: center; font-size: 30px; color: #A8B0B7; }
+
+.key.txt { font-size: 38px; }
+.row.chk .z{top:13px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="stripe"></div>
+  <div class="camera">
+    <div class="screen" id="screen">
+      <div class="wp1"></div><div class="wp2"></div>
+      <div id="desk"></div>
+      <div class="toast" id="toast"><div class="ic">!</div><div class="t" id="toastT"></div><div class="b" id="toastB"></div></div>
+      <div class="win" id="win">
+        <div class="abs">
+          <div class="titlebar">
+            <svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.4 9.4-8 11-4.6-1.6-8-6-8-11V5z" fill="#005A8C"/></svg>
+            <span id="winTitle"></span>
+            <span class="tb-btns"><span>–</span><span class="bx"></span><span>×</span></span>
+          </div>
+          <div class="nav"></div>
+          <div class="avatar"></div><div class="uname">Usuário</div><div class="usub">Conta local</div>
+          <div id="navs"></div>
+          <div id="pages"></div>
+        </div>
+      </div>
+      <div class="taskbar">
+        <div class="tb-start"><i></i><i></i><i></i><i></i></div>
+        <div class="tb-search">Pesquisar</div>
+        <div class="tb-ico" style="left:412px;background:#7CAFDD"></div>
+        <div class="tb-ico" style="left:438px;background:#C9CDD1"></div>
+        <div class="tb-ico" style="left:464px;background:#5B9BD5"></div>
+        <div class="tb-ico" style="left:490px;background:#D9DBDD"></div>
+        <div class="tb-clock">15:48<br>21/10/2026</div>
+      </div>
+      <div class="ring" id="rg"></div>
+      <div class="ring amber" id="rA"></div>
+      <div class="ripple" id="rp"></div>
+      <svg class="cursor" id="cursor" viewBox="0 0 14 21"><path d="M0.8 0.8 L0.8 16.2 L4.6 12.8 L7.4 19.6 L9.9 18.5 L7.1 11.9 L12.4 11.9 Z" fill="#fff" stroke="#25211E" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      <div class="chip" id="chip"></div>
+      <div class="dim" id="dim"></div>
+      <div class="keys" id="keys"></div>
+    </div>
+  </div>
+  <div class="badge" id="badge"></div>
+  <div class="dots" id="dots"></div>
+  <div class="cap" id="cap"><h4 id="capTitle"></h4><p id="capSub"></p></div>
+  <div class="foot"><span class="f1">R3 INFORMÁTICA</span><span class="f2">r3informatica.com.br</span></div>
+  <div class="outro" id="outro">
+    <div class="o-stripe"></div>
+    <div class="gA" id="gA"><p class="o-eye">R3 INFORMÁTICA</p><h3 class="o-t1" id="oT1">Com a gente você aprende<br>coisas novas todo dia!</h3></div>
+    <div class="gB" id="gB"><p class="o-eye">NÃO PERCA AS PRÓXIMAS</p><h3 class="o-t2" id="oT2">Siga @r3tech.br</h3><p class="o-s2" id="oS2">para mais dicas.</p></div>
+    <div class="o-site">r3informatica.com.br</div>
+  </div>
+</div>
+<script src="engine.js"></script>
+</body>
+</html>

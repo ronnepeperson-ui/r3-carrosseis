@@ -1,0 +1,200 @@
+{
+ "id": "espaco-disco",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {
+  "title": "Seu PC está sem espaço?",
+  "sub": "Dá pra resolver em 4 cliques.",
+  "toast": {
+   "title": "Pouco espaço em disco",
+   "body": "O disco local (C:) está quase cheio."
+  }
+ },
+ "reassure": {
+  "title": "Seus arquivos ficam salvos.",
+  "sub": "Só sai o lixo do computador."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Sistema",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Tela",
+     "desc": "Brilho, luz noturna, perfil de exibição",
+     "chev": true
+    },
+    {
+     "name": "Som",
+     "desc": "Níveis de volume, saída, entrada",
+     "chev": true
+    },
+    {
+     "name": "Notificações",
+     "desc": "Alertas de aplicativos e do sistema",
+     "chev": true
+    },
+    {
+     "name": "Energia",
+     "desc": "Bateria, tempo de tela, modo de energia",
+     "chev": true
+    },
+    {
+     "name": "Armazenamento",
+     "desc": "Espaço em disco e unidades",
+     "chev": true
+    },
+    {
+     "name": "Multitarefa",
+     "desc": "Ancorar janelas, áreas de trabalho",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Sistema > Armazenamento",
+   "nav": 0,
+   "card": {
+    "title": "Disco local (C:)",
+    "tag": "Quase cheio",
+    "pct": 90,
+    "text": "214 GB usados de 237 GB"
+   },
+   "rows": [
+    {
+     "name": "Aplicativos e recursos",
+     "size": "98 GB"
+    },
+    {
+     "name": "Arquivos temporários",
+     "size": "9,5 GB"
+    },
+    {
+     "name": "Imagens",
+     "size": "21 GB"
+    },
+    {
+     "name": "Documentos",
+     "size": "12 GB"
+    }
+   ]
+  },
+  {
+   "title": "Arquivos temporários",
+   "nav": 0,
+   "subtitle": "Selecione os itens que deseja remover.",
+   "final": {
+    "button": "Remover arquivos",
+    "total": "Total selecionado: 3,2 GB",
+    "done": "Pronto! 3,2 GB liberados"
+   },
+   "rows": [
+    {
+     "name": "Arquivos temporários",
+     "size": "1,4 GB",
+     "checked": true
+    },
+    {
+     "name": "Miniaturas",
+     "size": "210 MB",
+     "checked": true
+    },
+    {
+     "name": "Arquivos de Otimização de Entrega",
+     "size": "1,1 GB",
+     "checked": true
+    },
+    {
+     "name": "Cache do sombreador do DirectX",
+     "size": "480 MB",
+     "checked": true
+    },
+    {
+     "name": "Downloads",
+     "desc": "Seus arquivos baixados",
+     "size": "6,3 GB",
+     "checked": false,
+     "warn": "NÃO MARQUE"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Sistema",
+   "sub": "Depois em Armazenamento",
+   "click": [
+    {
+     "nav": 0
+    },
+    {
+     "row": 4
+    }
+   ]
+  },
+  {
+   "title": "Abra Arquivos temporários",
+   "sub": "Deixe Downloads desmarcado",
+   "click": {
+    "row": 1
+   },
+   "warn": true
+  },
+  {
+   "title": "Clique em Remover arquivos",
+   "sub": "É só esperar terminar",
+   "click": {
+    "button": true
+   },
+   "final": true,
+   "sub2": "Pronto: espaço liberado!"
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Seu PC guarda lixo",
+  "l2": "que você nunca viu.",
+  "sub": "Limpe em 4 cliques, sem instalar nada.",
+  "cta": "Veja como no próximo story"
+ }
+}
