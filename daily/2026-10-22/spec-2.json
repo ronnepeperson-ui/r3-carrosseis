@@ -1,0 +1,107 @@
+{
+ "id": "2026-10-22-programa-travado",
+ "hook": {
+  "title": "Programa travou de vez?",
+  "sub": "Feche só ele, sem reiniciar o PC."
+ },
+ "reassure": {
+  "title": "Não precisa reiniciar.",
+  "sub": "Os outros programas seguem abertos."
+ },
+ "window": {
+  "title": "Gerenciador de Tarefas",
+  "nav": [
+   "Processos",
+   "Desempenho",
+   "Histórico de aplicativos",
+   "Aplicativos de inicialização",
+   "Usuários",
+   "Detalhes",
+   "Serviços"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "Ctrl",
+   "Shift",
+   "Esc"
+  ],
+  "title": "Abra o Gerenciador",
+  "sub": "Aperte Ctrl, Shift e Esc juntas"
+ },
+ "pages": [
+  {
+   "title": "Processos",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Navegador",
+     "desc": "Respondendo"
+    },
+    {
+     "name": "Planilha",
+     "desc": "Não está respondendo"
+    },
+    {
+     "name": "Bloco de Notas",
+     "desc": "Respondendo"
+    }
+   ],
+   "subtitle": "Selecione o programa que travou.",
+   "final": {
+    "button": "Finalizar tarefa",
+    "total": "Nenhum selecionado",
+    "done": "Pronto! Foi fechado"
+   }
+  },
+  {
+   "title": "Processos",
+   "nav": 0,
+   "subtitle": "Selecione o programa que travou.",
+   "final": {
+    "button": "Finalizar tarefa",
+    "total": "Selecionado: Planilha",
+    "done": "Pronto! Foi fechado"
+   },
+   "rows": [
+    {
+     "name": "Navegador",
+     "desc": "Respondendo"
+    },
+    {
+     "name": "Planilha",
+     "desc": "Não está respondendo"
+    },
+    {
+     "name": "Bloco de Notas",
+     "desc": "Respondendo"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique no que travou",
+   "sub": "Fica na aba Processos",
+   "click": {
+    "row": 1
+   }
+  },
+  {
+   "title": "Clique em Finalizar tarefa",
+   "sub": "O que não salvou nele se perde",
+   "click": {
+    "button": true
+   },
+   "final": true,
+   "sub2": "Pronto: o travado foi fechado!"
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Programa travou e",
+  "l2": "não fecha de jeito?",
+  "sub": "Ferramenta gratuita do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
