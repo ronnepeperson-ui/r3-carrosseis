@@ -1,0 +1,24 @@
+{
+ "id": "2026-10-22-historico-copiar-colar",
+ "hook": {"title": "Copiou e perdeu o texto?", "sub": "Esse atalho guarda tudo pra você."},
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "Já vem no seu Windows."},
+ "window": {"title": "Área de Transferência", "nav": ["Histórico"]},
+ "keys": {"keys": ["win", "V"], "title": "Aperte Windows e V", "sub": "Na 1ª vez, clique em Ligar"},
+ "pages": [
+  {"title": "Histórico", "nav": 0, "rows": [
+    {"name": "Endereço da loja"},
+    {"name": "Telefone do cliente"},
+    {"name": "Receita de bolo"}]},
+  {"title": "Texto colado", "nav": 0, "subtitle": "O item escolhido foi colado.", "rows": [
+    {"name": "Endereço da loja", "desc": "Colado com sucesso"}]},
+  {"title": "Histórico", "nav": 0, "rows": [
+    {"name": "Endereço da loja"},
+    {"name": "Telefone do cliente"},
+    {"name": "Receita de bolo"}]}
+ ],
+ "steps": [
+  {"title": "Clique no que quer colar", "sub": "Todos os seus últimos Ctrl+C", "click": {"row": 0}},
+  {"title": "Pronto, é só isso!", "sub": "Ao reiniciar o PC, a lista zera", "click": {"nav": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Seu PC lembra tudo", "l2": "que você copiou.", "sub": "Atalho gratuito, já vem no Windows.", "cta": "Veja como no próximo story"}
+}
