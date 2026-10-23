@@ -1,0 +1,29 @@
+{
+ "id": "2026-10-23-programas-inicializacao",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {"title": "PC lento ao ligar?", "sub": "Talvez seja muito programa abrindo."},
+ "reassure": {"title": "Nada é apagado.", "sub": "Você só desliga a abertura automática."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Aplicativos", "nav": 4, "rows": [
+    {"name":"Aplicativos instalados","desc":"Desinstalar e gerenciar","chev":true},
+    {"name":"Aplicativos padrão","desc":"Padrões de arquivo e link","chev":true},
+    {"name":"Mapas offline","desc":"Baixar mapas","chev":true},
+    {"name":"Inicialização","desc":"Aplicativos que iniciam ao entrar","chev":true}]},
+  {"title": "Aplicativos > Inicialização", "nav": 4, "subtitle": "Escolha o que abre sozinho ao ligar o PC.", "rows": [
+    {"name":"Programa de música","desc":"Impacto alto","size":"Ativado","checked":true},
+    {"name":"Chat de vídeo","desc":"Impacto médio","size":"Ativado","checked":true},
+    {"name":"Antivírus","desc":"Deixe ativado","size":"Ativado","checked":true}]},
+  {"title": "Aplicativos > Inicialização", "nav": 4, "subtitle": "Escolha o que abre sozinho ao ligar o PC.", "rows": [
+    {"name":"Programa de música","desc":"Impacto alto","size":"Desativado","checked":false},
+    {"name":"Chat de vídeo","desc":"Impacto médio","size":"Ativado","checked":true},
+    {"name":"Antivírus","desc":"Deixe ativado","size":"Ativado","checked":true}]}
+ ],
+ "steps": [
+  {"title": "Clique em Aplicativos", "sub": "Depois em Inicialização", "click": [{"nav": 4},{"row": 3}]},
+  {"title": "Desligue o que não usa", "sub": "Não mexa no antivírus", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Seu PC liga lento por", "l2": "culpa desses apps.", "sub": "Ferramenta gratuita e nativa do Windows.", "cta": "Veja como no próximo story"}
+}
