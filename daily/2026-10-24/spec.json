@@ -1,0 +1,28 @@
+{
+ "id": "2026-10-24-modo-escuro",
+ "hook": {"title": "Olhos cansados de noite?", "sub": "O modo escuro resolve em 3 cliques."},
+ "reassure": {"title": "Nada é apagado.", "sub": "Só muda a cor das janelas."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Personalização", "nav": 3, "rows": [
+    {"name":"Plano de fundo","desc":"Imagem, cor sólida, apresentação","chev":true},
+    {"name":"Cores","desc":"Modo claro ou escuro, cor de destaque","chev":true},
+    {"name":"Temas","desc":"Instalar, criar, gerenciar","chev":true},
+    {"name":"Tela de bloqueio","desc":"Imagem, aplicativos","chev":true}]},
+  {"title": "Personalização > Cores", "nav": 3, "subtitle": "Escolha seu modo", "rows": [
+    {"name":"Claro","desc":"Janelas claras","size":"Ativo","checked":true},
+    {"name":"Escuro","desc":"Janelas escuras","size":"","checked":false},
+    {"name":"Personalizado","desc":"Escolha cada parte","size":"","checked":false}]},
+  {"title": "Personalização > Cores", "nav": 3, "subtitle": "Escolha seu modo", "rows": [
+    {"name":"Claro","desc":"Janelas claras","size":"","checked":false},
+    {"name":"Escuro","desc":"Janelas escuras","size":"Ativo","checked":true},
+    {"name":"Personalizado","desc":"Escolha cada parte","size":"","checked":false}]}
+ ],
+ "steps": [
+  {"title": "Clique em Personalização", "sub": "Depois em Cores", "click": [{"nav": 3},{"row": 1}]},
+  {"title": "Em Escolha seu modo...", "sub": "marque Escuro", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Tela clara demais", "l2": "cansa sua vista.", "sub": "Modo escuro nativo e gratuito do Windows.", "cta": "Veja como no próximo story"}
+}
