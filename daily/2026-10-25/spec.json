@@ -1,0 +1,27 @@
+{
+ "id": "2026-10-25-luz-noturna",
+ "hook": {"title": "Olhos cansados à noite?", "sub": "O Windows tem um truque grátis."},
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "É um recurso do próprio Windows."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Sistema", "nav": 0, "rows": [
+    {"name":"Tela","desc":"Brilho, luz noturna, perfil de exibição","chev":true},
+    {"name":"Som","desc":"Níveis de volume, saída, entrada","chev":true},
+    {"name":"Notificações","desc":"Alertas de aplicativos e do sistema","chev":true},
+    {"name":"Energia","desc":"Bateria, tempo de tela, modo de energia","chev":true}]},
+  {"title": "Sistema > Tela", "nav": 0, "rows": [
+    {"name":"Brilho","desc":"Ajustar o brilho da tela integrada"},
+    {"name":"Luz noturna","desc":"Use cores mais quentes para dormir melhor","chev":true},
+    {"name":"HDR","desc":"Mais detalhes em vídeos e jogos","chev":true}]},
+  {"title": "Luz noturna", "nav": 0, "rows": [
+    {"name":"Luz noturna","desc":"Cores mais quentes, menos luz azul"},
+    {"name":"Agendar luz noturna","desc":"Liga e desliga sozinha"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Sistema", "sub": "Depois em Tela", "click": [{"nav":0},{"row":0}]},
+  {"title": "Abra Luz noturna", "sub": "Ligue e escolha o horário", "click": {"row":1}}
+ ],
+ "cover": {"eyebrow":"DICA RÁPIDA DE INFORMÁTICA","l1":"Tela forte à noite","l2":"cansa seus olhos.","sub":"Ferramenta grátis do Windows, em 3 cliques.","cta":"Veja como no próximo story"}
+}
