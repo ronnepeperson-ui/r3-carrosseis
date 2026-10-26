@@ -1,0 +1,111 @@
+{
+ "id": "2026-10-26-programa-travado",
+ "hook": {
+  "title": "Programa travou de vez?",
+  "sub": "Feche ele em 3 passos.",
+  "toast": {
+   "title": "Não está respondendo",
+   "body": "O programa parou de responder."
+  }
+ },
+ "reassure": {
+  "title": "Só o programa travado fecha.",
+  "sub": "O resto do PC segue normal."
+ },
+ "window": {
+  "title": "Gerenciador de Tarefas",
+  "nav": [
+   "Processos",
+   "Desempenho",
+   "Histórico de aplicativos",
+   "Aplicativos de inicialização",
+   "Usuários",
+   "Detalhes",
+   "Serviços"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "Ctrl",
+   "Shift",
+   "Esc"
+  ],
+  "title": "Abra o Gerenciador",
+  "sub": "Aperte Ctrl, Shift e Esc juntas"
+ },
+ "pages": [
+  {
+   "title": "Processos",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Planilha de Vendas",
+     "desc": "Não está respondendo"
+    },
+    {
+     "name": "Navegador",
+     "desc": "Em execução"
+    },
+    {
+     "name": "Explorador de Arquivos",
+     "desc": "Em execução"
+    }
+   ]
+  },
+  {
+   "title": "Processos",
+   "nav": 0,
+   "final": {
+    "button": "Finalizar tarefa",
+    "total": "Planilha de Vendas selecionada",
+    "done": "Pronto! Programa fechado",
+    "busy": "Finalizando…"
+   },
+   "rows": [
+    {
+     "name": "Planilha de Vendas",
+     "desc": "Não está respondendo",
+     "size": "",
+     "checked": true
+    },
+    {
+     "name": "Navegador",
+     "desc": "Em execução",
+     "size": "",
+     "checked": false
+    },
+    {
+     "name": "Explorador de Arquivos",
+     "desc": "Em execução",
+     "size": "",
+     "checked": false
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique no que travou",
+   "sub": "O que diz: Não está respondendo",
+   "click": {
+    "row": 0
+   }
+  },
+  {
+   "title": "Clique em Finalizar tarefa",
+   "sub": "O programa fecha na hora",
+   "click": {
+    "button": true
+   },
+   "final": true,
+   "sub2": "Pronto: abra de novo e siga!"
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Programa travado e",
+  "l2": "não fecha de jeito?",
+  "sub": "Ferramenta gratuita do próprio Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}

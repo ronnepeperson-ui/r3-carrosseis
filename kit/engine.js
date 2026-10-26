@@ -235,7 +235,7 @@
     finals.forEach(function (f) {
       var removing = v >= f.t0 && v < f.t1, finished = v >= f.t1;
       var btn = $('btn' + f.page);
-      btn.textContent = removing ? 'Removendo…' : PAGES[f.page].final.button;
+      btn.textContent = removing ? (PAGES[f.page].final.busy || 'Removendo…') : PAGES[f.page].final.button;
       btn.classList.toggle('off', removing || finished);
       $('tot' + f.page).style.display = (!removing && !finished) ? '' : 'none';
       $('done' + f.page).style.opacity = finished ? ease(seg(v, f.t1, f.t1 + 0.5)) : 0;
