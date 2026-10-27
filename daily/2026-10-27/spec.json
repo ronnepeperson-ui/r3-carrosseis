@@ -1,0 +1,113 @@
+{
+ "id": "2026-10-27-tamanho-texto",
+ "hook": {
+  "title": "Letra pequena demais?",
+  "sub": "Aumente em 3 passos, sem esforço.",
+  "toast": {
+   "title": "Difícil de ler?",
+   "body": "O texto da tela está muito pequeno."
+  }
+ },
+ "reassure": {
+  "title": "Seus arquivos ficam salvos.",
+  "sub": "É só um ajuste de tela. Dá pra desfazer."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Acessibilidade",
+   "nav": 7,
+   "rows": [
+    {
+     "name": "Tamanho do texto",
+     "desc": "Deixe o texto maior em todo o Windows",
+     "chev": true
+    },
+    {
+     "name": "Lupa",
+     "desc": "Amplie partes da tela",
+     "chev": true
+    },
+    {
+     "name": "Narrador",
+     "desc": "Leitor de tela",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Tamanho do texto",
+   "nav": 7,
+   "subtitle": "Ajuste o texto do seu jeito.",
+   "rows": [
+    {
+     "name": "Visualização do tamanho do texto",
+     "desc": "Arraste o controle deslizante"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Acessibilidade",
+   "sub": "No menu da esquerda",
+   "click": {
+    "nav": 7
+   }
+  },
+  {
+   "title": "Abra Tamanho do texto",
+   "sub": "Lá você ajusta o tamanho",
+   "click": {
+    "row": 0
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Letra pequena?",
+  "l2": "Dá pra aumentar.",
+  "sub": "Ferramenta gratuita do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
