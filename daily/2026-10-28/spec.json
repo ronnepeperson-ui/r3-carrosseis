@@ -1,0 +1,20 @@
+{
+ "id": "2026-10-28-desinstalar-programa",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {"title": "Programa que você não usa?", "sub": "Tire do PC em 4 cliques.", "toast": {"title": "Pouco espaço em disco", "body": "Programas antigos ocupam espaço."}},
+ "reassure": {"title": "Seus documentos ficam salvos.", "sub": "Sai só o programa que você escolher."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Aplicativos", "nav": 4, "rows": [{"name": "Aplicativos instalados", "desc": "Desinstalar e gerenciar", "chev": true}, {"name": "Aplicativos padrão", "chev": true}, {"name": "Inicialização", "chev": true}]},
+  {"title": "Aplicativos instalados", "nav": 4, "rows": [{"name": "Jogo antigo", "desc": "Não uso mais", "size": "2,1 GB", "chev": true}, {"name": "Navegador", "size": "480 MB", "chev": true}, {"name": "Editor de fotos", "size": "310 MB", "chev": true}]},
+  {"title": "Jogo antigo", "nav": 4, "subtitle": "Remova só o que você não usa mais.", "final": {"button": "Desinstalar", "total": "Jogo antigo · 2,1 GB", "done": "Pronto! Programa removido"}, "rows": [{"name": "Jogo antigo", "desc": "Versão 1.0", "size": "2,1 GB"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Aplicativos", "sub": "Depois em Aplicativos instalados", "click": [{"nav": 4}, {"row": 0}]},
+  {"title": "Escolha o programa", "sub": "Só o que você não usa mais", "click": {"row": 0}},
+  {"title": "Clique em Desinstalar", "sub": "Siga as instruções na tela", "click": {"button": true}, "final": true, "sub2": "Pronto: espaço liberado!"}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Programa parado", "l2": "ocupando espaço?", "sub": "Ferramenta grátis do Windows.", "cta": "Veja como no próximo story"}
+}
