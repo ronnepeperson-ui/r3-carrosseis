@@ -1,0 +1,17 @@
+{
+ "id": "2026-10-29-capturar-tela",
+ "hook": {"title": "Quer salvar o que vê na tela?", "sub": "Tire um print em 3 passos."},
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "É um atalho nativo do Windows."},
+ "window": {"title": "Ferramenta de Captura", "nav": ["Retângulo", "Janela", "Tela cheia", "Forma livre"]},
+ "keys": {"keys": ["win", "Shift", "S"], "title": "Aperte três teclas juntas", "sub": "Windows, Shift e a letra S"},
+ "pages": [
+  {"title": "Escolha o tipo de recorte", "rows": [{"name": "Retângulo", "desc": "Selecione uma área retangular", "chev": true}, {"name": "Janela", "desc": "Capture uma janela", "chev": true}, {"name": "Tela cheia", "desc": "Capture a tela inteira", "chev": true}, {"name": "Forma livre", "desc": "Desenhe a área", "chev": true}]},
+  {"title": "Sua captura", "subtitle": "Ela abre aqui, pronta para salvar.", "rows": [{"name": "Captura de tela", "desc": "Abra para ver", "chev": true}]},
+  {"title": "Capturas de Tela", "subtitle": "Suas capturas ficam nesta pasta.", "rows": [{"name": "Captura de tela 1", "desc": "Imagem"}]}
+ ],
+ "steps": [
+  {"title": "Escolha Retângulo", "sub": "Arraste sobre o que quer salvar", "click": {"row": 0}},
+  {"title": "Ache na pasta", "sub": "Fica em Capturas de Tela", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Salve a tela", "l2": "em 1 segundo.", "sub": "Atalho grátis e nativo do Windows.", "cta": "Veja como no próximo story"}
+}
