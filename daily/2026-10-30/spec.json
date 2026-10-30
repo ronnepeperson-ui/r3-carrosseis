@@ -1,0 +1,18 @@
+{
+ "id": "2026-10-30-nao-perturbe",
+ "hook": {"title": "Aviso toda hora na tela?", "sub": "Silencie em 3 passos.", "toast": {"title": "Nova notificação", "body": "Mais um aviso chegando..."}},
+ "reassure": {"title": "Nada é apagado.", "sub": "Os avisos só ficam esperando."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Sistema", "nav": 0, "rows": [{"name": "Tela", "desc": "Brilho, luz noturna, perfil de exibição", "chev": true}, {"name": "Som", "desc": "Níveis de volume, saída, entrada", "chev": true}, {"name": "Notificações", "desc": "Alertas de aplicativos e do sistema", "chev": true}, {"name": "Energia", "desc": "Bateria, tempo de tela, modo de energia", "chev": true}, {"name": "Armazenamento", "desc": "Espaço em disco e unidades", "chev": true}]},
+  {"title": "Sistema > Notificações", "nav": 0, "subtitle": "Clique para ligar o modo silencioso.", "rows": [{"name": "Não perturbe", "desc": "Os avisos vão direto para a central", "chev": true}, {"name": "Notificações", "desc": "Alertas de aplicativos e do sistema"}]},
+  {"title": "Não perturbe ativado", "nav": 0, "subtitle": "Pronto! Sem avisos te atrapalhando.", "rows": [{"name": "Não perturbe", "desc": "Ativado"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Sistema", "sub": "Depois em Notificações", "click": [{"nav": 0}, {"row": 2}]},
+  {"title": "Ligue o Não perturbe", "sub": "É só um clique na chave", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Avisos demais?", "l2": "Silencie já.", "sub": "Ferramenta grátis e nativa do Windows.", "cta": "Veja como no próximo story"}
+}
