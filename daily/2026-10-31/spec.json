@@ -1,0 +1,19 @@
+{
+ "id": "2026-10-31-horario-ativo",
+ "hook": {"title": "Windows reinicia do nada?", "sub": "Evite isso em 3 cliques.", "toast": {"title": "Reinício necessário", "body": "O Windows vai reiniciar para atualizar."}},
+ "reassure": {"title": "Nada é apagado.", "sub": "Só muda a hora do reinício."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Privacidade e segurança", "Windows Update"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Windows Update", "nav": 7, "rows": [{"name": "Pausar atualizações", "chev": true}, {"name": "Opções avançadas", "desc": "Horário ativo, atualizações opcionais", "chev": true}, {"name": "Histórico de atualizações", "chev": true}]},
+  {"title": "Opções avançadas", "nav": 7, "rows": [{"name": "Atualizações opcionais", "chev": true}, {"name": "Horário ativo", "desc": "Quando você usa o computador", "chev": true}, {"name": "Otimização de Entrega", "chev": true}]},
+  {"title": "Horário ativo", "nav": 7, "rows": [{"name": "Ajustar horário ativo", "desc": "Automaticamente", "chev": true}]}
+ ],
+ "steps": [
+  {"title": "Clique em Windows Update", "sub": "Último item do menu lateral", "click": {"nav": 7}},
+  {"title": "Abra Opções avançadas", "sub": "Dentro do Windows Update", "click": {"row": 1}},
+  {"title": "Abra Horário ativo", "sub": "Escolha Automaticamente", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "O Windows reinicia", "l2": "na hora errada?", "sub": "Recurso gratuito do Windows, sem instalar.", "cta": "Veja como no próximo story"}
+}
