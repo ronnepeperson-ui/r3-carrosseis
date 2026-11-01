@@ -1,0 +1,18 @@
+{
+ "id": "2026-11-01-lupa",
+ "hook": {"title": "Letra pequena demais?", "sub": "Amplie a tela em 3 passos.", "toast": {"title": "Difícil de ler?", "body": "As letras estão muito pequenas..."}},
+ "reassure": {"title": "Nada é alterado.", "sub": "É só uma lupa na tela."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Acessibilidade", "nav": 7, "rows": [{"name": "Tamanho do texto", "chev": true}, {"name": "Lupa", "desc": "Amplia partes da tela", "chev": true}, {"name": "Filtros de cor", "chev": true}, {"name": "Temas de contraste", "chev": true}]},
+  {"title": "Acessibilidade > Lupa", "nav": 7, "subtitle": "Clique para ligar a Lupa.", "rows": [{"name": "Lupa", "desc": "Desativado", "chev": true}, {"name": "Zoom", "desc": "Controle o nível de ampliação"}]},
+  {"title": "Lupa ativada", "nav": 7, "subtitle": "Pronto! Para fechar: Windows + Esc.", "rows": [{"name": "Lupa", "desc": "Ativado"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Acessibilidade", "sub": "Depois em Lupa", "click": [{"nav": 7}, {"row": 1}]},
+  {"title": "Ligue a Lupa", "sub": "Atalho: Windows e sinal de +", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Letra miúda demais?", "l2": "Aumente a tela já.", "sub": "Lupa grátis e nativa do Windows.", "cta": "Veja como no próximo story"}
+}
