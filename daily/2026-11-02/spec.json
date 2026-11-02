@@ -1,0 +1,18 @@
+{
+ "id": "2026-11-02-mouse",
+ "hook": {"title": "Mouse lento demais?", "sub": "Ajuste a velocidade em 3 passos.", "toast": {"title": "Cursor travando?", "body": "O ponteiro anda muito devagar..."}},
+ "reassure": {"title": "Nada é apagado.", "sub": "É só um ajuste de velocidade."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Bluetooth e dispositivos", "nav": 1, "rows": [{"name": "Dispositivos", "chev": true}, {"name": "Impressoras e scanners", "chev": true}, {"name": "Mouse", "desc": "Botões, velocidade, rolagem", "chev": true}, {"name": "Touchpad", "chev": true}]},
+  {"title": "Bluetooth e dispositivos > Mouse", "nav": 1, "subtitle": "Mexa o controle deslizante.", "rows": [{"name": "Velocidade do ponteiro do mouse", "desc": "Mova o controle deslizante", "chev": true}, {"name": "Botão principal do mouse"}, {"name": "Rolar a roda do mouse"}]},
+  {"title": "Velocidade ajustada", "nav": 1, "subtitle": "Pronto! Teste o ponteiro na tela.", "rows": [{"name": "Velocidade do ponteiro do mouse", "desc": "Ajustada"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Bluetooth", "sub": "Depois em Mouse", "click": [{"nav": 1}, {"row": 2}]},
+  {"title": "Ajuste a velocidade", "sub": "Mova o controle deslizante", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Mouse lento ou", "l2": "rápido demais?", "sub": "Ajuste grátis, nativo do Windows.", "cta": "Veja como no próximo story"}
+}
