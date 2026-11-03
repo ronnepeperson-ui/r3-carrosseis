@@ -1,0 +1,93 @@
+{
+ "id": "2026-11-03-janelas-lado-a-lado",
+ "hook": {
+  "title": "Duas telas ao mesmo tempo?",
+  "sub": "Use o atalho das janelas lado a lado.",
+  "toast": {
+   "title": "Precisa comparar?",
+   "body": "Abrindo e fechando janelas toda hora..."
+  }
+ },
+ "reassure": {
+  "title": "Não precisa instalar nada.",
+  "sub": "Já vem pronto no Windows."
+ },
+ "window": {
+  "title": "Sua janela",
+  "nav": []
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "←"
+  ],
+  "title": "Aperte Windows e a seta ←",
+  "sub": "A janela vai para a metade esquerda"
+ },
+ "pages": [
+  {
+   "title": "Escolha a outra janela",
+   "subtitle": "As janelas abertas aparecem como miniaturas.",
+   "rows": [
+    {
+     "name": "Miniatura da outra janela",
+     "desc": "Clique nela",
+     "chev": true
+    },
+    {
+     "name": "Outra miniatura",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Pronto! Lado a lado",
+   "subtitle": "Duas janelas, cada uma numa metade.",
+   "rows": [
+    {
+     "name": "Esquerda: sua janela"
+    },
+    {
+     "name": "Direita: a outra janela",
+     "desc": "Win + seta → manda pro outro lado",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Janelas trocadas de lado",
+   "subtitle": "É só repetir o atalho quando quiser.",
+   "rows": [
+    {
+     "name": "Esquerda: a outra janela"
+    },
+    {
+     "name": "Direita: sua janela"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique numa miniatura",
+   "sub": "Ela ocupa a outra metade",
+   "click": {
+    "row": 0
+   }
+  },
+  {
+   "title": "Quer trocar de lado?",
+   "sub": "Aperte Windows e a seta →",
+   "click": {
+    "row": 1
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Duas janelas na tela",
+  "l2": "sem bagunça?",
+  "sub": "Atalho grátis, já nativo do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
