@@ -1,0 +1,18 @@
+{
+ "id": "2026-11-04-ponteiro-grande",
+ "hook": {"title": "Não acha o cursor?", "sub": "Deixe o ponteiro bem maior.", "toast": {"title": "Cadê o mouse?", "body": "O ponteiro some na tela..."}},
+ "reassure": {"title": "Nada é apagado.", "sub": "É só um ajuste de tamanho."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Acessibilidade", "nav": 7, "rows": [{"name": "Tamanho do texto", "chev": true}, {"name": "Efeitos visuais", "chev": true}, {"name": "Ponteiro do mouse e toque", "desc": "Tamanho e cor do ponteiro", "chev": true}, {"name": "Lupa", "chev": true}]},
+  {"title": "Ponteiro do mouse e toque", "nav": 7, "subtitle": "Mexa o controle deslizante.", "rows": [{"name": "Tamanho", "desc": "Mova o controle deslizante", "chev": true}, {"name": "Estilo do ponteiro do mouse"}]},
+  {"title": "Ponteiro ajustado", "nav": 7, "subtitle": "Pronto! O ponteiro ficou maior.", "rows": [{"name": "Tamanho", "desc": "Ajustado"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Acessibilidade", "sub": "Depois em Ponteiro do mouse", "click": [{"nav": 7}, {"row": 2}]},
+  {"title": "Aumente o Tamanho", "sub": "Mova o controle deslizante", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Seu mouse sumiu", "l2": "na tela?", "sub": "Ajuste grátis, nativo do Windows.", "cta": "Veja como no próximo story"}
+}
