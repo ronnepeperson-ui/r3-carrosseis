@@ -1,0 +1,63 @@
+{
+ "id": "2026-11-05-esquecer-wifi",
+ "chip": "EXEMPLO · nomes variam por PC",
+ "hook": {
+  "title": "Wi-Fi não conecta?",
+  "sub": "Esqueça a rede e conecte de novo.",
+  "toast": {
+   "title": "Sem Internet",
+   "body": "Conectado, mas sem acesso à Internet."
+  }
+ },
+ "reassure": {
+  "title": "Tenha a senha do Wi-Fi.",
+  "sub": "Você vai digitar de novo."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]
+ },
+ "keys": {
+  "keys": ["win","I"],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {"title": "Início", "rows": [
+    {"name": "Seu computador", "desc": "Windows 11"},
+    {"name": "Rede", "desc": "Conectado"},
+    {"name": "Atualização", "desc": "Em dia"},
+    {"name": "Personalização"}]},
+  {"title": "Rede e Internet", "nav": 2, "rows": [
+    {"name": "Wi-Fi", "desc": "Conectar, gerenciar redes conhecidas", "chev": true},
+    {"name": "Ethernet", "desc": "Adaptadores, limite de dados", "chev": true},
+    {"name": "VPN", "desc": "Conexões VPN", "chev": true},
+    {"name": "Modo avião", "desc": "Parar toda a comunicação sem fio", "chev": true}]},
+  {"title": "Rede e Internet > Wi-Fi", "nav": 2, "rows": [
+    {"name": "Mostrar redes disponíveis", "chev": true},
+    {"name": "Gerenciar redes conhecidas", "desc": "Adicionar, remover e editar redes", "chev": true},
+    {"name": "Propriedades de hardware", "chev": true}]},
+  {"title": "Gerenciar redes conhecidas", "nav": 2, "rows": [
+    {"name": "Minha rede Wi-Fi", "desc": "Segura", "chev": true},
+    {"name": "Rede da visita", "desc": "Segura", "chev": true}]},
+  {"title": "Minha rede Wi-Fi", "nav": 2,
+   "subtitle": "Conecte automaticamente quando estiver ao alcance.",
+   "final": {"button": "Esquecer", "total": "Rede salva neste computador", "done": "Rede esquecida!"},
+   "rows": [
+    {"name": "Conectar automaticamente", "desc": "Ligado"},
+    {"name": "Tipo de perfil de rede", "desc": "Rede privada"}]}
+ ],
+ "steps": [
+  {"title": "Abra Rede e Internet", "sub": "Depois clique em Wi-Fi", "click": [{"nav": 2},{"row": 0}]},
+  {"title": "Gerenciar redes conhecidas", "sub": "Clique nessa opção", "click": {"row": 1}},
+  {"title": "Clique na sua rede", "sub": "A do seu Wi-Fi de casa", "click": {"row": 0}},
+  {"title": "Clique em Esquecer", "sub": "Depois reconecte com a senha", "click": {"button": true}, "final": true, "sub2": "Pronto: conecte de novo!"}
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Wi-Fi com defeito?",
+  "l2": "Faça ele esquecer.",
+  "sub": "Ferramenta gratuita do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
