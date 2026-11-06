@@ -1,0 +1,149 @@
+{
+ "id": "2026-11-06-janelas-lado-a-lado",
+ "hook": {
+  "title": "Duas telas numa só?",
+  "sub": "Janelas lado a lado em 3 passos.",
+  "toast": {
+   "title": "Muitas janelas abertas",
+   "body": "Alternar toda hora cansa, né?"
+  }
+ },
+ "reassure": {
+  "title": "Não precisa instalar nada.",
+  "sub": "Já vem pronto no Windows."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Sistema",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Tela",
+     "desc": "Brilho, luz noturna, perfil de exibição",
+     "chev": true
+    },
+    {
+     "name": "Som",
+     "desc": "Níveis de volume, saída, entrada",
+     "chev": true
+    },
+    {
+     "name": "Notificações",
+     "desc": "Alertas de aplicativos e do sistema",
+     "chev": true
+    },
+    {
+     "name": "Energia",
+     "desc": "Bateria, tempo de tela, modo de energia",
+     "chev": true
+    },
+    {
+     "name": "Armazenamento",
+     "desc": "Espaço em disco e unidades",
+     "chev": true
+    },
+    {
+     "name": "Multitarefa",
+     "desc": "Ancorar janelas, áreas de trabalho",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Sistema > Multitarefa",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Ajustar janelas",
+     "desc": "Encaixar janelas na tela",
+     "chev": true
+    },
+    {
+     "name": "Áreas de trabalho",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Ajustar janelas",
+   "nav": 0,
+   "subtitle": "Deixe a chave Ajustar janelas ligada.",
+   "rows": [
+    {
+     "name": "Ajustar janelas",
+     "size": "Ligado",
+     "checked": true
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Sistema",
+   "sub": "Depois em Multitarefa",
+   "click": [
+    {
+     "nav": 0
+    },
+    {
+     "row": 5
+    }
+   ]
+  },
+  {
+   "title": "Abra Ajustar janelas",
+   "sub": "Deixe ligado e use Windows + setas",
+   "click": {
+    "row": 0
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Duas janelas",
+  "l2": "na mesma tela.",
+  "sub": "Recurso gratuito do próprio Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
