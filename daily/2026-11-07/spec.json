@@ -1,0 +1,162 @@
+{
+ "id": "2026-11-07-uso-da-bateria",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {
+  "title": "Bateria acabando rápido?",
+  "sub": "Descubra quem gasta mais em 3 passos.",
+  "toast": {
+   "title": "Bateria fraca",
+   "body": "Mas você acabou de carregar..."
+  }
+ },
+ "reassure": {
+  "title": "Não precisa instalar nada.",
+  "sub": "Já vem pronto no Windows."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Sistema",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Tela",
+     "desc": "Brilho, luz noturna, perfil de exibição",
+     "chev": true
+    },
+    {
+     "name": "Som",
+     "desc": "Níveis de volume, saída, entrada",
+     "chev": true
+    },
+    {
+     "name": "Notificações",
+     "desc": "Alertas de aplicativos e do sistema",
+     "chev": true
+    },
+    {
+     "name": "Energia e bateria",
+     "desc": "Uso da bateria, modo de energia",
+     "chev": true
+    },
+    {
+     "name": "Armazenamento",
+     "desc": "Espaço em disco e unidades",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Sistema > Energia e bateria",
+   "nav": 0,
+   "card": {
+    "title": "Bateria",
+    "tag": "Em uso",
+    "pct": 62,
+    "text": "62% restantes"
+   },
+   "rows": [
+    {
+     "name": "Tela e suspensão",
+     "chev": true
+    },
+    {
+     "name": "Uso da bateria",
+     "desc": "Veja o que gasta mais",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Uso da bateria por aplicativo",
+   "nav": 0,
+   "subtitle": "Últimas 24 horas",
+   "rows": [
+    {
+     "name": "Navegador",
+     "size": "38%"
+    },
+    {
+     "name": "Vídeos",
+     "size": "21%"
+    },
+    {
+     "name": "Mensagens",
+     "size": "12%"
+    },
+    {
+     "name": "Tela",
+     "size": "9%"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Sistema",
+   "sub": "Depois em Energia e bateria",
+   "click": [
+    {
+     "nav": 0
+    },
+    {
+     "row": 3
+    }
+   ]
+  },
+  {
+   "title": "Abra Uso da bateria",
+   "sub": "Veja quem mais gasta",
+   "click": {
+    "row": 1
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Sua bateria some",
+  "l2": "e você não sabe?",
+  "sub": "Ferramenta grátis do Windows, sem instalar.",
+  "cta": "Veja como no próximo story"
+ }
+}
