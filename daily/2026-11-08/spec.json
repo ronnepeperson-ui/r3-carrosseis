@@ -1,0 +1,70 @@
+{
+ "id": "2026-11-08-windows-update",
+ "hook": {
+  "title": "PC estranho ou lento?",
+  "sub": "Pode ser atualização pendente.",
+  "toast": {
+   "title": "Windows Update",
+   "body": "Há atualizações esperando por você."
+  }
+ },
+ "reassure": {
+  "title": "Não precisa instalar nada.",
+  "sub": "Já vem pronto no Windows."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Windows Update"]
+ },
+ "keys": {
+  "keys": ["win","I"],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {"name": "Seu computador", "desc": "Windows 11"},
+    {"name": "Rede", "desc": "Conectado"},
+    {"name": "Atualização", "desc": "Verifique aqui"},
+    {"name": "Personalização"}
+   ]
+  },
+  {
+   "title": "Windows Update",
+   "nav": 7,
+   "final": {
+    "button": "Verificar atualizações",
+    "busy": "Verificando…",
+    "total": "Mantenha o PC ligado na tomada",
+    "done": "Pronto! Tudo em dia"
+   },
+   "rows": [
+    {"name": "Histórico de atualizações", "chev": true},
+    {"name": "Opções avançadas", "chev": true}
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Windows Update",
+   "sub": "Fica no fim do menu lateral",
+   "click": {"nav": 7}
+  },
+  {
+   "title": "Clique em Verificar atualizações",
+   "sub": "Se pedir, reinicie o PC",
+   "click": {"button": true},
+   "final": true,
+   "sub2": "Pronto: PC em dia e mais seguro!"
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Seu PC pede ajuda",
+  "l2": "e você ignora?",
+  "sub": "Ferramenta grátis do Windows, em 3 passos.",
+  "cta": "Veja como no próximo story"
+ }
+}
