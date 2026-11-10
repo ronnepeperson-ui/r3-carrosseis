@@ -1,0 +1,55 @@
+{
+ "id": "2026-11-10-modo-de-energia",
+ "chip": "Opções variam conforme o PC",
+ "hook": {
+  "title": "Bateria acabando rápido?",
+  "sub": "Troque o modo e ganhe tempo.",
+  "toast": {"title": "Bateria fraca", "body": "Restam 12% de bateria."}
+ },
+ "reassure": {
+  "title": "Você não perde nada.",
+  "sub": "Só muda como o PC usa energia."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]
+ },
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [
+   {"name": "Seu computador", "desc": "Windows 11"},
+   {"name": "Rede", "desc": "Conectado"},
+   {"name": "Atualização", "desc": "Em dia"},
+   {"name": "Personalização"}
+  ]},
+  {"title": "Sistema", "nav": 0, "rows": [
+   {"name": "Tela", "desc": "Brilho, luz noturna, perfil de exibição", "chev": true},
+   {"name": "Som", "desc": "Níveis de volume, saída, entrada", "chev": true},
+   {"name": "Notificações", "desc": "Alertas de aplicativos e do sistema", "chev": true},
+   {"name": "Energia e bateria", "desc": "Modo de energia, economia de bateria", "chev": true},
+   {"name": "Armazenamento", "desc": "Espaço em disco e unidades", "chev": true},
+   {"name": "Multitarefa", "desc": "Ancorar janelas, áreas de trabalho", "chev": true}
+  ]},
+  {"title": "Sistema > Energia e bateria", "nav": 0, "rows": [
+   {"name": "Modo de energia", "desc": "Equilibrado", "chev": true},
+   {"name": "Tela e suspensão", "desc": "Tempo para desligar a tela", "chev": true},
+   {"name": "Economia de bateria", "desc": "Estende a duração da bateria", "chev": true}
+  ]},
+  {"title": "Modo de energia", "nav": 0, "subtitle": "Escolha o que combina com o seu momento.", "rows": [
+   {"name": "Melhor eficiência energética", "desc": "Poupa a bateria"},
+   {"name": "Equilibrado", "desc": "Bom para o dia a dia"},
+   {"name": "Melhor desempenho", "desc": "Mais força, gasta mais"}
+  ]}
+ ],
+ "steps": [
+  {"title": "Abra Energia e bateria", "sub": "Em Sistema, no menu lateral", "click": [{"nav": 0}, {"row": 3}]},
+  {"title": "Clique em Modo de energia", "sub": "Escolha a opção que quiser", "click": {"row": 0}}
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Seu PC gasta mais",
+  "l2": "que o necessário.",
+  "sub": "Ferramenta nativa do Windows, em 3 passos.",
+  "cta": "Veja como no próximo story"
+ }
+}
