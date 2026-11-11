@@ -1,0 +1,28 @@
+{
+ "id": "2026-11-11-hora-automatica",
+ "hook": {"title": "Relógio do PC errado?", "sub": "Conserte em 4 cliques.", "toast": {"title": "Conexão não é particular", "body": "Verifique a data e hora do computador."}},
+ "reassure": {"title": "Seus arquivos ficam salvos.", "sub": "Só o relógio é ajustado."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Hora e idioma", "nav": 6, "rows": [
+    {"name":"Data e hora","desc":"Fuso horário, relógio, calendário","chev":true},
+    {"name":"Idioma e região","desc":"Idioma do Windows, formato regional","chev":true},
+    {"name":"Digitação","desc":"Sugestões de texto, teclado","chev":true},
+    {"name":"Fala","desc":"Idioma da fala, microfone","chev":true}]},
+  {"title": "Hora e idioma > Data e hora", "nav": 6, "rows": [
+    {"name":"Definir horário automaticamente","desc":"Desativado"},
+    {"name":"Definir fuso horário automaticamente","desc":"Ativado"},
+    {"name":"Fuso horário","desc":"(UTC-03:00) Brasília"}]},
+  {"title": "Hora e idioma > Data e hora", "nav": 6, "rows": [
+    {"name":"Definir horário automaticamente","desc":"Ativado"},
+    {"name":"Definir fuso horário automaticamente","desc":"Ativado"},
+    {"name":"Fuso horário","desc":"(UTC-03:00) Brasília"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Hora e idioma", "sub": "Depois em Data e hora", "click": [{"nav": 6},{"row": 0}]},
+  {"title": "Ligue o horário automático", "sub": "Clique em Definir horário automaticamente", "click": {"row": 0}, "sub2": "Pronto: o relógio se acerta sozinho!"}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Seu relógio vive", "l2": "atrasado ou errado?", "sub": "Ferramenta gratuita do Windows.", "cta": "Veja como no próximo story"}
+}
