@@ -1,0 +1,34 @@
+{
+ "id": "2026-11-12-aplicativos-padrao",
+ "hook": {"title": "Link abre no app errado?", "sub": "Escolha você mesmo em 4 cliques."},
+ "reassure": {"title": "Seus arquivos ficam salvos.", "sub": "Só muda qual app abre."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Aplicativos", "nav": 4, "rows": [
+    {"name":"Aplicativos instalados","desc":"Desinstalar, padrões de aplicativos","chev":true},
+    {"name":"Aplicativos padrão","desc":"Padrões de arquivo e de link","chev":true},
+    {"name":"Mapas offline","desc":"Baixar mapas","chev":true},
+    {"name":"Inicialização","desc":"Aplicativos que iniciam ao entrar","chev":true}]},
+  {"title": "Aplicativos > Aplicativos padrão", "nav": 4, "subtitle": "Definir padrões para aplicativos", "rows": [
+    {"name":"Microsoft Edge","chev":true},
+    {"name":"Fotos","chev":true},
+    {"name":"Reprodutor de Mídia","chev":true},
+    {"name":"Bloco de Notas","chev":true}]},
+  {"title": "Microsoft Edge", "nav": 4, "rows": [
+    {"name":"Navegador padrão","desc":"Definir padrão"},
+    {"name":".html","desc":"Microsoft Edge"},
+    {"name":"HTTPS","desc":"Microsoft Edge"}]},
+  {"title": "Microsoft Edge", "nav": 4, "rows": [
+    {"name":"Navegador padrão","desc":"Microsoft Edge é o padrão"},
+    {"name":".html","desc":"Microsoft Edge"},
+    {"name":"HTTPS","desc":"Microsoft Edge"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Aplicativos", "sub": "Depois em Aplicativos padrão", "click": [{"nav": 4},{"row": 1}]},
+  {"title": "Escolha o aplicativo", "sub": "Na lista, clique nele", "click": {"row": 0}},
+  {"title": "Clique em Definir padrão", "sub": "Ele passa a abrir seus links", "click": {"row": 0}, "sub2": "Pronto: você escolheu o padrão!"}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Qual app abre", "l2": "seus links?", "sub": "Ferramenta gratuita do Windows.", "cta": "Veja como no próximo story"}
+}
