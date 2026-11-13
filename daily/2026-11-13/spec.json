@@ -1,0 +1,17 @@
+{
+ "id": "2026-11-13-digitacao-por-voz",
+ "hook": {"title": "Cansou de digitar?", "sub": "Fale e o Windows escreve pra você."},
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "É ferramenta gratuita do Windows."},
+ "window": {"title": "Bloco de Notas", "nav": ["Documento", "Digitação por voz"]},
+ "keys": {"keys": ["win", "H"], "title": "Aperte Windows e H", "sub": "Com o cursor numa caixa de texto"},
+ "pages": [
+  {"title": "Documento", "nav": 0, "subtitle": "Clique na caixa de texto antes.", "rows": [{"name": "Texto em branco", "desc": "O cursor fica piscando aqui"}]},
+  {"title": "Digitação por voz", "nav": 1, "subtitle": "Aguarde o aviso Escutando...", "rows": [{"name": "Escutando...", "desc": "Já pode falar normalmente", "chev": true}]},
+  {"title": "Digitação por voz", "nav": 1, "subtitle": "O que você fala vira texto.", "rows": [{"name": "Microfone", "desc": "Clique de novo para parar"}]}
+ ],
+ "steps": [
+  {"title": "Espere: Escutando...", "sub": "Precisa de internet e microfone", "click": {"nav": 1}},
+  {"title": "Fale normalmente", "sub": "Para parar, clique no microfone", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Seu PC escreve", "l2": "o que você fala.", "sub": "Ferramenta gratuita do próprio Windows.", "cta": "Veja como no próximo story"}
+}
