@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-14-areas-de-trabalho",
+ "hook": {"title": "Tela bagunçada de janelas?", "sub": "Crie outra área de trabalho."},
+ "reassure": {"title": "Nada é apagado.", "sub": "É só uma tela extra, grátis."},
+ "window": {"title": "Visão de tarefas", "nav": ["Área de trabalho 1", "Nova área de trabalho"]},
+ "keys": {"keys": ["win", "Tab"], "title": "Abra a Visão de tarefas", "sub": "Aperte Windows e Tab"},
+ "pages": [
+  {"title": "Visão de tarefas", "nav": 0, "rows": [
+   {"name": "Navegador", "desc": "Área de trabalho 1"},
+   {"name": "Planilha", "desc": "Área de trabalho 1"},
+   {"name": "Bloco de Notas", "desc": "Área de trabalho 1"}]},
+  {"title": "Área de trabalho 2", "nav": 1, "subtitle": "Tela limpa, pronta pra usar.", "rows": [
+   {"name": "Área de trabalho 1", "desc": "3 janelas abertas", "chev": true},
+   {"name": "Área de trabalho 2", "desc": "Vazia"}]},
+  {"title": "Área de trabalho 1", "nav": 0, "subtitle": "Tudo continua aqui.", "rows": [
+   {"name": "Navegador"},
+   {"name": "Planilha"},
+   {"name": "Bloco de Notas"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Nova área de trabalho", "sub": "Surge uma tela limpa", "click": {"nav": 1}},
+  {"title": "Volte clicando na Área 1", "sub": "Suas janelas continuam lá", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA DO WINDOWS", "l1": "Janelas demais?", "l2": "Ganhe outra tela.", "sub": "Recurso grátis e nativo do Windows.", "cta": "Veja como no próximo story"}
+}
