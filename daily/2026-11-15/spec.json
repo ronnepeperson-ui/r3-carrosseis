@@ -1,0 +1,31 @@
+{
+ "id": "2026-11-15-mixer-de-volume",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {"title": "Vídeo alto, música baixa?", "sub": "Ajuste o volume de cada app.", "toast": {"title": "Navegador", "body": "Som muito baixo..."}},
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "Já vem pronto no Windows."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Sistema", "nav": 0, "rows": [
+    {"name":"Tela","desc":"Brilho, luz noturna, perfil de exibição","chev":true},
+    {"name":"Som","desc":"Níveis de volume, saída, entrada","chev":true},
+    {"name":"Notificações","desc":"Alertas de aplicativos e do sistema","chev":true},
+    {"name":"Energia e bateria","desc":"Uso da bateria, modo de energia","chev":true},
+    {"name":"Armazenamento","desc":"Espaço em disco e unidades","chev":true}]},
+  {"title": "Sistema > Som", "nav": 0, "rows": [
+    {"name":"Saída","desc":"Alto-falantes","chev":true},
+    {"name":"Entrada","desc":"Microfone","chev":true},
+    {"name":"Mixer de volume","desc":"Volume por aplicativo","chev":true}]},
+  {"title": "Mixer de volume", "nav": 0, "subtitle": "Volume de cada aplicativo", "rows": [
+    {"name":"Sistema","size":"100%"},
+    {"name":"Navegador","size":"35%"},
+    {"name":"Vídeos","size":"80%"},
+    {"name":"Mensagens","size":"60%"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Sistema", "sub": "Depois em Som", "click": [{"nav": 0},{"row": 1}]},
+  {"title": "Abra o Mixer de volume", "sub": "Cada app tem o seu volume", "click": {"row": 2}, "sub2": "Pronto: ajuste cada app no seu nível!"}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Um app grita e", "l2": "outro some?", "sub": "Ferramenta grátis do Windows, sem instalar.", "cta": "Veja como no próximo story"}
+}
