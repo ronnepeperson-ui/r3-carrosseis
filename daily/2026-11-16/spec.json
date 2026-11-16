@@ -1,0 +1,25 @@
+{
+ "id": "2026-11-16-extensoes-arquivo",
+ "hook": {"title": "Que tipo de arquivo é esse?", "sub": "Descubra em 3 cliques."},
+ "reassure": {"title": "Não muda nenhum arquivo.", "sub": "Só mostra o final do nome."},
+ "window": {"title": "Explorador de Arquivos", "nav": ["Início","Galeria","Área de Trabalho","Downloads","Documentos","Imagens","Músicas","Vídeos"]},
+ "keys": {"keys": ["win","E"], "title": "Abra o Explorador", "sub": "Aperte Windows e a letra E"},
+ "pages": [
+  {"title": "Documentos", "nav": 4, "rows": [
+    {"name": "Novo"}, {"name": "Classificar", "chev": true}, {"name": "Exibir", "chev": true}, {"name": "Ver mais", "chev": true}]},
+  {"title": "Exibir", "nav": 4, "rows": [
+    {"name": "Ícones grandes"}, {"name": "Detalhes"}, {"name": "Mostrar", "chev": true}]},
+  {"title": "Exibir > Mostrar", "nav": 4, "rows": [
+    {"name": "Caixas de seleção de itens", "checked": false},
+    {"name": "Extensões de nomes de arquivos", "checked": false},
+    {"name": "Itens ocultos", "checked": false}]},
+  {"title": "Documentos", "nav": 4, "rows": [
+    {"name": "Fatura.pdf"}, {"name": "Currículo.docx"}, {"name": "Foto da viagem.jpg"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Exibir", "sub": "No alto da janela", "click": {"row": 2}},
+  {"title": "Passe em Mostrar", "sub": "Fica no fim do menu", "click": {"row": 2}},
+  {"title": "Marque Extensões", "sub": "Pronto: .pdf, .jpg aparecem", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Todo arquivo tem", "l2": "um final escondido.", "sub": "Recurso gratuito do próprio Windows.", "cta": "Veja como no próximo story"}
+}
