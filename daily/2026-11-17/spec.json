@@ -1,0 +1,18 @@
+{
+ "id": "2026-11-17-desempenho-memoria",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {"title": "PC lento? Veja o porquê.", "sub": "Descubra em 3 cliques."},
+ "reassure": {"title": "Só olhar, não muda nada.", "sub": "Seus arquivos ficam salvos."},
+ "window": {"title": "Gerenciador de Tarefas", "nav": ["Processos","Desempenho","Histórico de aplicativos","Aplicativos de inicialização","Usuários","Detalhes","Serviços"]},
+ "keys": {"keys": ["Ctrl","Shift","Esc"], "title": "Abra o Gerenciador", "sub": "Aperte Ctrl, Shift e Esc juntas"},
+ "pages": [
+  {"title": "Processos", "nav": 0, "rows": [{"name": "Navegador", "size": "1,2 GB"}, {"name": "Explorador de Arquivos", "size": "90 MB"}, {"name": "Aplicativo de mensagens", "size": "310 MB"}]},
+  {"title": "Desempenho", "nav": 1, "rows": [{"name": "CPU", "desc": "18% · 3,1 GHz", "chev": true}, {"name": "Memória", "desc": "9,9/16 GB (62%)", "chev": true}, {"name": "Disco 0 (C:)", "desc": "SSD · 4%", "chev": true}, {"name": "Wi-Fi", "desc": "Enviando: 0 Kbps", "chev": true}]},
+  {"title": "Memória", "nav": 1, "card": {"title": "Memória", "tag": "Em uso", "pct": 62, "text": "9,9 GB usados de 16 GB"}, "rows": [{"name": "Em uso", "size": "9,9 GB"}, {"name": "Disponível", "size": "6,1 GB"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Desempenho", "sub": "No menu da esquerda", "click": {"nav": 1}},
+  {"title": "Clique em Memória", "sub": "Veja quanto está em uso", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "O painel secreto", "l2": "do seu PC.", "sub": "Ferramenta gratuita do próprio Windows.", "cta": "Veja como no próximo story"}
+}
