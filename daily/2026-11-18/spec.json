@@ -1,0 +1,19 @@
+{
+ "id": "2026-11-18-tela-suspensao",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {"title": "Tela apaga sozinha?", "sub": "Você escolhe quando. 3 cliques."},
+ "reassure": {"title": "Só muda um tempo.", "sub": "Seus arquivos ficam salvos."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Sistema", "nav": 0, "rows": [{"name": "Tela", "chev": true}, {"name": "Som", "chev": true}, {"name": "Notificações", "chev": true}, {"name": "Energia e bateria", "chev": true}, {"name": "Armazenamento", "chev": true}]},
+  {"title": "Sistema > Energia e bateria", "nav": 0, "rows": [{"name": "Modo de energia", "chev": true}, {"name": "Tela e suspensão", "chev": true}, {"name": "Uso da bateria", "chev": true}]},
+  {"title": "Tela e suspensão", "nav": 0, "rows": [{"name": "Tela", "size": "10 minutos"}, {"name": "Suspensão", "size": "30 minutos"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Sistema", "sub": "Depois em Energia e bateria", "click": [{"nav": 0}, {"row": 3}]},
+  {"title": "Abra Tela e suspensão", "sub": "Escolha o tempo que preferir", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Sua tela apaga", "l2": "quando ela quer.", "sub": "Ajuste grátis, direto no Windows.", "cta": "Veja como no próximo story"}
+}
