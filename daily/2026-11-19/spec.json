@@ -1,0 +1,151 @@
+{
+ "id": "2026-11-19-especificacoes-pc",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {
+  "title": "Quanto de memória tem?",
+  "sub": "Descubra em 3 cliques.",
+  "toast": {
+   "title": "Dúvida do técnico",
+   "body": "Qual o modelo do seu computador?"
+  }
+ },
+ "reassure": {
+  "title": "Só olhar, nada muda.",
+  "sub": "Não precisa instalar nada."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Sistema",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Tela",
+     "desc": "Brilho, luz noturna, perfil de exibição",
+     "chev": true
+    },
+    {
+     "name": "Som",
+     "desc": "Níveis de volume, saída, entrada",
+     "chev": true
+    },
+    {
+     "name": "Notificações",
+     "desc": "Alertas de aplicativos e do sistema",
+     "chev": true
+    },
+    {
+     "name": "Energia",
+     "desc": "Bateria, tempo de tela, modo de energia",
+     "chev": true
+    },
+    {
+     "name": "Armazenamento",
+     "desc": "Espaço em disco e unidades",
+     "chev": true
+    },
+    {
+     "name": "Multitarefa",
+     "desc": "Ancorar janelas, áreas de trabalho",
+     "chev": true
+    },
+    {
+     "name": "Sobre",
+     "desc": "Especificações do dispositivo, renomear o PC",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Sistema > Sobre",
+   "nav": 0,
+   "card": {
+    "title": "Especificações do dispositivo",
+    "tag": "Seu PC",
+    "pct": 50,
+    "text": "Nome, processador e RAM"
+   },
+   "rows": [
+    {
+     "name": "Nome do dispositivo",
+     "size": "MEU-PC"
+    },
+    {
+     "name": "Processador",
+     "size": "4 núcleos"
+    },
+    {
+     "name": "RAM instalada",
+     "size": "8,00 GB"
+    },
+    {
+     "name": "Especificações do Windows",
+     "desc": "Edição e versão"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Sistema",
+   "sub": "Menu do lado esquerdo",
+   "click": {
+    "nav": 0
+   }
+  },
+  {
+   "title": "Clique em Sobre",
+   "sub": "É o último item da lista",
+   "click": {
+    "row": 6
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Quanta memória",
+  "l2": "seu PC tem?",
+  "sub": "Veja grátis, com o próprio Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
