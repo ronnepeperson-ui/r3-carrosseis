@@ -1,0 +1,147 @@
+{
+ "id": "2026-11-20-brilho-tela",
+ "chip": "EXEMPLO · valores variam por PC",
+ "hook": {
+  "title": "Brilho da tela incomoda?",
+  "sub": "No notebook, ajuste em 3 cliques.",
+  "toast": {
+   "title": "Dúvida do cliente",
+   "body": "Minha tela está forte demais!"
+  }
+ },
+ "reassure": {
+  "title": "Só ajusta, nada se perde.",
+  "sub": "Seus arquivos ficam salvos."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Sistema",
+   "nav": 0,
+   "rows": [
+    {
+     "name": "Tela",
+     "desc": "Brilho, luz noturna, perfil de exibição",
+     "chev": true
+    },
+    {
+     "name": "Som",
+     "desc": "Níveis de volume, saída, entrada",
+     "chev": true
+    },
+    {
+     "name": "Notificações",
+     "desc": "Alertas de aplicativos e do sistema",
+     "chev": true
+    },
+    {
+     "name": "Energia",
+     "desc": "Bateria, tempo de tela, modo de energia",
+     "chev": true
+    },
+    {
+     "name": "Armazenamento",
+     "desc": "Espaço em disco e unidades",
+     "chev": true
+    },
+    {
+     "name": "Multitarefa",
+     "desc": "Ancorar janelas, áreas de trabalho",
+     "chev": true
+    },
+    {
+     "name": "Sobre",
+     "desc": "Especificações do dispositivo, renomear o PC",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Sistema > Tela",
+   "nav": 0,
+   "card": {
+    "title": "Brilho",
+    "tag": "Notebook",
+    "pct": 70,
+    "text": "Arraste o controle deslizante"
+   },
+   "rows": [
+    {
+     "name": "Luz noturna",
+     "desc": "Cores mais quentes à noite"
+    },
+    {
+     "name": "HDR",
+     "desc": "Mais brilho e cor"
+    },
+    {
+     "name": "Escala",
+     "desc": "Tamanho do texto e dos itens"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Sistema",
+   "sub": "Menu do lado esquerdo",
+   "click": {
+    "nav": 0
+   }
+  },
+  {
+   "title": "Clique em Tela",
+   "sub": "Depois arraste o Brilho",
+   "click": {
+    "row": 0
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Tela do notebook",
+  "l2": "muito clara?",
+  "sub": "Ferramenta grátis do próprio Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
