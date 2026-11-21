@@ -1,0 +1,17 @@
+{
+ "id": "2026-11-21-painel-emojis",
+ "hook": {"title": "Emoji no texto do PC?", "sub": "É só um atalho, sem instalar nada."},
+ "reassure": {"title": "Já vem no Windows.", "sub": "Não precisa baixar nada."},
+ "window": {"title": "Painel de emojis", "nav": ["Emojis", "GIFs", "Kaomoji", "Símbolos"]},
+ "keys": {"keys": ["win", "."], "title": "Aperte Windows e o ponto", "sub": "Com o cursor numa caixa de texto"},
+ "pages": [
+  {"title": "Emojis", "nav": 0, "rows": [{"name": "Rosto sorrindo"}, {"name": "Coração vermelho"}, {"name": "Joinha"}]},
+  {"title": "Símbolos", "nav": 3, "rows": [{"name": "Símbolo de direitos autorais"}, {"name": "Símbolo do euro"}, {"name": "Seta para a direita"}]},
+  {"title": "Pronto!", "nav": 3, "rows": [{"name": "Símbolo inserido no texto"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Símbolos", "sub": "Tem emoji, GIF e Kaomoji também", "click": {"nav": 3}},
+  {"title": "Clique no que quiser", "sub": "Ele aparece no seu texto", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Teclado tem emoji", "l2": "escondido.", "sub": "Ferramenta grátis do próprio Windows.", "cta": "Veja como no próximo story"}
+}
