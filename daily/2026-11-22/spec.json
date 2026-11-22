@@ -1,0 +1,17 @@
+{
+ "id": "2026-11-22-fixar-barra-tarefas",
+ "hook": {"title": "Abrir o programa é lento?", "sub": "Deixe ele fixo na barra de baixo."},
+ "reassure": {"title": "Não apaga nada.", "sub": "O programa continua no seu PC."},
+ "window": {"title": "Pesquisar", "nav": ["Tudo", "Aplicativos", "Documentos", "Web"]},
+ "keys": {"keys": ["win", "S"], "title": "Abra a Pesquisa", "sub": "Aperte Windows e a letra S"},
+ "pages": [
+  {"title": "Aplicativos", "nav": 1, "rows": [{"name": "Bloco de Notas", "desc": "Aplicativo"}, {"name": "Calculadora", "desc": "Aplicativo"}, {"name": "Paint", "desc": "Aplicativo"}]},
+  {"title": "Bloco de Notas", "nav": 1, "rows": [{"name": "Abrir"}, {"name": "Abrir local do arquivo"}, {"name": "Fixar em Iniciar"}, {"name": "Fixar na barra de tarefas"}]},
+  {"title": "Pronto!", "nav": 1, "rows": [{"name": "Ícone fixado na barra de tarefas"}]}
+ ],
+ "steps": [
+  {"title": "Clique com o botão direito", "sub": "No programa que você mais usa", "click": {"row": 0}},
+  {"title": "Fixar na barra de tarefas", "sub": "Pronto: ele fica sempre à mão", "click": {"row": 3}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Programa favorito", "l2": "a um clique.", "sub": "Ferramenta grátis do próprio Windows.", "cta": "Veja como no próximo story"}
+}
