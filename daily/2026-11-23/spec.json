@@ -1,0 +1,19 @@
+{
+ "id": "2026-11-23-plano-de-fundo",
+ "chip": "EXEMPLO · imagens variam por PC",
+ "hook": {"title": "Cansou do fundo da tela?", "sub": "Troque em 3 cliques."},
+ "reassure": {"title": "Seus arquivos ficam salvos.", "sub": "Só muda a foto de fundo."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Personalização"}]},
+  {"title": "Personalização", "nav": 3, "rows": [{"name":"Plano de fundo","desc":"Imagem, cor ou apresentação","chev":true},{"name":"Cores","desc":"Modo claro ou escuro","chev":true},{"name":"Temas","desc":"Visual do Windows","chev":true},{"name":"Tela de bloqueio","chev":true}]},
+  {"title": "Personalização > Plano de fundo", "nav": 3, "rows": [{"name":"Paisagem","desc":"Imagem de exemplo"},{"name":"Montanhas","desc":"Imagem de exemplo"},{"name":"Flores","desc":"Imagem de exemplo"}]},
+  {"title": "Personalização > Plano de fundo", "nav": 3, "subtitle": "Pronto! O fundo já mudou.", "rows": [{"name":"Paisagem","desc":"Imagem de exemplo"},{"name":"Montanhas","desc":"Em uso agora"},{"name":"Flores","desc":"Imagem de exemplo"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Personalização", "sub": "Depois em Plano de fundo", "click": [{"nav": 3},{"row": 0}]},
+  {"title": "Escolha uma imagem", "sub": "O fundo muda na hora", "click": {"row": 1}}
+ ],
+ "cover": {"eyebrow":"DICA RÁPIDA DE INFORMÁTICA","l1":"Seu PC tem a sua","l2":"cara em 3 cliques.","sub":"Ferramenta gratuita do próprio Windows.","cta":"Veja como no próximo story"}
+}
