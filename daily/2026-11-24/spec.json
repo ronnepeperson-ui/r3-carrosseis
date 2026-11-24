@@ -1,0 +1,19 @@
+{
+ "id": "2026-11-24-saida-de-som",
+ "chip": "EXEMPLO · dispositivos variam por PC",
+ "hook": {"title": "PC sem som nenhum?", "sub": "Pode ser a saída errada."},
+ "reassure": {"title": "Seus arquivos ficam salvos.", "sub": "Só troca de onde o som sai."},
+ "window": {"title": "Configurações", "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]},
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name":"Seu computador","desc":"Windows 11"},{"name":"Rede","desc":"Conectado"},{"name":"Atualização","desc":"Em dia"},{"name":"Sistema"}]},
+  {"title": "Sistema", "nav": 0, "rows": [{"name":"Tela","desc":"Brilho e layout","chev":true},{"name":"Som","desc":"Níveis de volume, saída","chev":true},{"name":"Notificações","chev":true},{"name":"Energia e bateria","chev":true}]},
+  {"title": "Sistema > Som", "nav": 0, "subtitle": "Saída: escolha onde reproduzir o som", "rows": [{"name":"Alto-falantes","desc":"Dispositivo de exemplo"},{"name":"Fones de ouvido","desc":"Dispositivo de exemplo"},{"name":"Monitor HDMI","desc":"Dispositivo de exemplo"}]},
+  {"title": "Sistema > Som", "nav": 0, "subtitle": "Pronto! O som sai por ali agora.", "rows": [{"name":"Alto-falantes","desc":"Em uso agora"},{"name":"Fones de ouvido","desc":"Dispositivo de exemplo"},{"name":"Monitor HDMI","desc":"Dispositivo de exemplo"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Sistema e Som", "sub": "Depois olhe a parte Saída", "click": [{"nav": 0},{"row": 1}]},
+  {"title": "Escolha o dispositivo", "sub": "Alto-falantes ou fones", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow":"DICA RÁPIDA DE INFORMÁTICA","l1":"PC sem som?","l2":"Talvez não quebrou.","sub":"Ferramenta gratuita do próprio Windows.","cta":"Veja como no próximo story"}
+}
