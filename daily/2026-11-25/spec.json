@@ -1,0 +1,17 @@
+{
+ "id": "2026-11-25-bluetooth",
+ "hook": {"title": "Fone não conecta no PC?", "sub": "Confira o Bluetooth em 3 passos.", "toast": {"title": "Bluetooth", "body": "Dispositivo não encontrado."}},
+ "reassure": {"title": "Nada é instalado.", "sub": "É só uma chave nas Configurações."},
+ "window": {"title": "Configurações", "nav": ["Sistema", "Bluetooth e dispositivos", "Rede e Internet", "Personalização", "Aplicativos", "Contas", "Hora e idioma", "Acessibilidade"]},
+ "keys": {"keys": ["win", "I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [{"name": "Seu computador", "desc": "Windows 11"}, {"name": "Rede", "desc": "Conectado"}, {"name": "Atualização", "desc": "Em dia"}, {"name": "Personalização"}]},
+  {"title": "Bluetooth e dispositivos", "nav": 1, "subtitle": "Clique para ligar o Bluetooth.", "rows": [{"name": "Bluetooth", "desc": "Desativado", "chev": true}, {"name": "Dispositivos", "desc": "Mouse, teclado, caneta, áudio", "chev": true}, {"name": "Impressoras e scanners", "desc": "Preferências, solução de problemas", "chev": true}]},
+  {"title": "Bluetooth ativado", "nav": 1, "subtitle": "Pronto! Agora o PC enxerga seus aparelhos.", "rows": [{"name": "Bluetooth", "desc": "Ativado"}]}
+ ],
+ "steps": [
+  {"title": "Clique em Bluetooth", "sub": "No menu: Bluetooth e dispositivos", "click": {"nav": 1}},
+  {"title": "Ligue o Bluetooth", "sub": "É só um clique na chave", "click": {"row": 0}}
+ ],
+ "cover": {"eyebrow": "DICA RÁPIDA DE INFORMÁTICA", "l1": "Fone não aparece?", "l2": "O culpado é simples.", "sub": "Ferramenta grátis e nativa do Windows.", "cta": "Veja como no próximo story"}
+}
