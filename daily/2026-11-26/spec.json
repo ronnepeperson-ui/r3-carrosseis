@@ -1,0 +1,175 @@
+{
+ "id": "2026-11-26-barra-oculta",
+ "hook": {
+  "title": "Barra atrapalhando a tela?",
+  "sub": "Esconda ela em 4 cliques."
+ },
+ "reassure": {
+  "title": "Nada é apagado.",
+  "sub": "É só uma opção da barra de tarefas."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Personalização",
+   "nav": 3,
+   "rows": [
+    {
+     "name": "Plano de fundo",
+     "desc": "Imagem, cor sólida, apresentação",
+     "chev": true
+    },
+    {
+     "name": "Cores",
+     "desc": "Modo claro ou escuro",
+     "chev": true
+    },
+    {
+     "name": "Temas",
+     "desc": "Instalar, criar, gerenciar",
+     "chev": true
+    },
+    {
+     "name": "Tela de bloqueio",
+     "desc": "Imagem e aplicativos",
+     "chev": true
+    },
+    {
+     "name": "Barra de tarefas",
+     "desc": "Comportamentos, itens fixados",
+     "chev": true
+    },
+    {
+     "name": "Iniciar",
+     "desc": "Aplicativos recentes e itens",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Personalização > Barra de tarefas",
+   "nav": 3,
+   "rows": [
+    {
+     "name": "Itens da barra de tarefas",
+     "desc": "Pesquisa, Visão de tarefas",
+     "chev": true
+    },
+    {
+     "name": "Ícones da bandeja do sistema",
+     "desc": "Menu Caneta, Teclado tátil",
+     "chev": true
+    },
+    {
+     "name": "Outros ícones da bandeja do sistema",
+     "desc": "Ícones ocultos",
+     "chev": true
+    },
+    {
+     "name": "Comportamentos da barra de tarefas",
+     "desc": "Alinhamento, ocultar, selos",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Barra de tarefas",
+   "nav": 3,
+   "subtitle": "Marque a caixa de Ocultar automaticamente.",
+   "rows": [
+    {
+     "name": "Ocultar automaticamente a barra de tarefas",
+     "size": "",
+     "checked": false
+    }
+   ]
+  },
+  {
+   "title": "Barra de tarefas",
+   "nav": 3,
+   "subtitle": "Pronto! A barra some até você encostar o mouse embaixo.",
+   "rows": [
+    {
+     "name": "Ocultar automaticamente a barra de tarefas",
+     "size": "",
+     "checked": true
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Personalização",
+   "sub": "Depois em Barra de tarefas",
+   "click": [
+    {
+     "nav": 3
+    },
+    {
+     "row": 4
+    }
+   ]
+  },
+  {
+   "title": "Abra Comportamentos",
+   "sub": "Comportamentos da barra de tarefas",
+   "click": {
+    "row": 3
+   }
+  },
+  {
+   "title": "Marque a opção de ocultar",
+   "sub": "Ocultar automaticamente a barra de tarefas",
+   "click": {
+    "row": 0
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Ganhe espaço",
+  "l2": "na sua tela.",
+  "sub": "Ferramenta grátis e nativa do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
