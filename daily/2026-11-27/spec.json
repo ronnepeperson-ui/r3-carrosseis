@@ -1,0 +1,154 @@
+{
+ "id": "2026-11-27-pin-windows-hello",
+ "hook": {
+  "title": "Cansou de digitar a senha?",
+  "sub": "Crie um PIN em 4 cliques."
+ },
+ "reassure": {
+  "title": "Seus arquivos ficam salvos.",
+  "sub": "Só muda a forma de entrar no PC."
+ },
+ "window": {
+  "title": "Configurações",
+  "nav": [
+   "Sistema",
+   "Bluetooth e dispositivos",
+   "Rede e Internet",
+   "Personalização",
+   "Aplicativos",
+   "Contas",
+   "Hora e idioma",
+   "Acessibilidade"
+  ]
+ },
+ "keys": {
+  "keys": [
+   "win",
+   "I"
+  ],
+  "title": "Abra as Configurações",
+  "sub": "Aperte Windows e a letra I"
+ },
+ "pages": [
+  {
+   "title": "Início",
+   "rows": [
+    {
+     "name": "Seu computador",
+     "desc": "Windows 11"
+    },
+    {
+     "name": "Rede",
+     "desc": "Conectado"
+    },
+    {
+     "name": "Atualização",
+     "desc": "Em dia"
+    },
+    {
+     "name": "Personalização"
+    }
+   ]
+  },
+  {
+   "title": "Contas",
+   "nav": 5,
+   "rows": [
+    {
+     "name": "Suas informações",
+     "desc": "Foto, conta Microsoft",
+     "chev": true
+    },
+    {
+     "name": "Opções de entrada",
+     "desc": "Windows Hello, chave de segurança, senha",
+     "chev": true
+    },
+    {
+     "name": "Família",
+     "desc": "Contas da família",
+     "chev": true
+    },
+    {
+     "name": "Backup do Windows",
+     "desc": "Arquivos e configurações",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "Contas > Opções de entrada",
+   "nav": 5,
+   "subtitle": "Maneiras de entrar",
+   "rows": [
+    {
+     "name": "Reconhecimento facial (Windows Hello)",
+     "chev": true
+    },
+    {
+     "name": "PIN (Windows Hello)",
+     "desc": "Entre com um PIN",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "PIN (Windows Hello)",
+   "nav": 5,
+   "subtitle": "Entre mais rápido e com segurança.",
+   "rows": [
+    {
+     "name": "Configurar",
+     "desc": "Criar um PIN para este PC",
+     "chev": true
+    }
+   ]
+  },
+  {
+   "title": "PIN (Windows Hello)",
+   "nav": 5,
+   "subtitle": "Siga as instruções na tela e crie seu PIN.",
+   "rows": [
+    {
+     "name": "PIN (Windows Hello)",
+     "desc": "Pronto para usar"
+    }
+   ]
+  }
+ ],
+ "steps": [
+  {
+   "title": "Clique em Contas",
+   "sub": "Depois em Opções de entrada",
+   "click": [
+    {
+     "nav": 5
+    },
+    {
+     "row": 1
+    }
+   ]
+  },
+  {
+   "title": "Escolha o PIN",
+   "sub": "PIN (Windows Hello)",
+   "click": {
+    "row": 1
+   }
+  },
+  {
+   "title": "Clique em Configurar",
+   "sub": "Siga as instruções e crie o PIN",
+   "click": {
+    "row": 0
+   }
+  }
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Digita senha toda",
+  "l2": "vez que liga o PC?",
+  "sub": "Ferramenta grátis e nativa do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
