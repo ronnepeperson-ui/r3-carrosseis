@@ -1,0 +1,47 @@
+{
+ "id": "2026-11-28-impressora-padrao",
+ "hook": {
+  "title": "Impressora errada?",
+  "sub": "Deixe a certa como padrão.",
+  "toast": {"title": "Impressão enviada", "body": "O documento foi para outra impressora."}
+ },
+ "reassure": {"title": "Não precisa instalar nada.", "sub": "É só um ajuste do Windows."},
+ "window": {
+  "title": "Configurações",
+  "nav": ["Sistema","Bluetooth e dispositivos","Rede e Internet","Personalização","Aplicativos","Contas","Hora e idioma","Acessibilidade"]
+ },
+ "keys": {"keys": ["win","I"], "title": "Abra as Configurações", "sub": "Aperte Windows e a letra I"},
+ "pages": [
+  {"title": "Início", "rows": [
+   {"name": "Seu computador", "desc": "Windows 11"},
+   {"name": "Rede", "desc": "Conectado"},
+   {"name": "Atualização", "desc": "Em dia"},
+   {"name": "Personalização"}]},
+  {"title": "Bluetooth e dispositivos", "nav": 1, "rows": [
+   {"name": "Dispositivos", "desc": "Mouse, teclado, fones", "chev": true},
+   {"name": "Impressoras e scanners", "desc": "Preferências, solução de problemas", "chev": true},
+   {"name": "Mouse", "desc": "Botões, velocidade do ponteiro", "chev": true},
+   {"name": "Câmeras", "desc": "Webcams conectadas", "chev": true}]},
+  {"title": "Impressoras e scanners", "nav": 1, "rows": [
+   {"name": "Permitir que o Windows gerencie", "desc": "Minha impressora padrão: Desativado"},
+   {"name": "Impressora do Escritório", "desc": "Pronta", "chev": true},
+   {"name": "Impressora da Recepção", "desc": "Pronta", "chev": true}]},
+  {"title": "Impressora do Escritório", "nav": 1,
+   "final": {"button": "Definir como padrão", "total": "Status da impressora: Pronta", "done": "Pronto! Agora ela é a padrão"},
+   "rows": [
+   {"name": "Status da impressora", "desc": "Pronta"},
+   {"name": "Abrir fila de impressão", "chev": true}]}
+ ],
+ "steps": [
+  {"title": "Bluetooth e dispositivos", "sub": "Depois Impressoras e scanners", "click": [{"nav": 1}, {"row": 1}]},
+  {"title": "Escolha a sua impressora", "sub": "Com o ajuste automático desativado", "click": {"row": 1}},
+  {"title": "Clique em Definir como padrão", "sub": "Pronto, é só isso", "click": {"button": true}, "final": true, "sub2": "Agora tudo imprime nela!"}
+ ],
+ "cover": {
+  "eyebrow": "DICA RÁPIDA DE INFORMÁTICA",
+  "l1": "Saiu na impressora",
+  "l2": "errada de novo?",
+  "sub": "Ajuste nativo e gratuito do Windows.",
+  "cta": "Veja como no próximo story"
+ }
+}
